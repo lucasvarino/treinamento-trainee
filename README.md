@@ -10,5 +10,5 @@ Esse repositório contém o código base utilizado para a realização do treina
 - Conhecimento base em ES6
 
 ## Materiais
-- [Treinamento de JavaScript] (https://github.com/isa56/treinamento-js-code)
-- [Treinamento de ES6] (https://github.com/lucasvarino/treinamento-es6-code)
+- [Treinamento de JavaScript](https://github.com/isa56/treinamento-js-code)
+- [Treinamento de ES6](https://github.com/lucasvarino/treinamento-es6-code)
