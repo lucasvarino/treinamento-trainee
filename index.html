@@ -68,38 +68,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script>
-    const fadeModal = document.getElementById("fadeModal");
-    const buttons = document.getElementsByClassName("botao")
-    const buttonsModal = [...buttons].filter((el) => {
-      return el.dataset.modal != null
-    })
-
-    const modalCurrent = () => {
-      const modal = document.getElementsByClassName("modal-p");
-      const modalOpen = [...modal].filter((modal) => {
-        return !modal.classList.contains("hide");
-      })
-
-      return modalOpen[0];
-    }
-
-    const toggleModal = (el) => {
-      if(el == undefined) {
-        fadeModal.classList.toggle("hide")
-        const currentModal = modalCurrent();
-        currentModal.classList.toggle("hide")
-      } else {
-        const modalOpen = document.getElementById(el);
-        modalOpen.classList.toggle("hide");
-        fadeModal.classList.toggle("hide")
-      }
-    }
-
-    [...buttonsModal, fadeModal].forEach((el) => {
-      el.addEventListener("click", () => toggleModal(el.dataset.modal))
-    })
-
-  </script>
+  <script src="modal.js"></script>
 
 </html>
